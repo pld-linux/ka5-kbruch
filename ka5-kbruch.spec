@@ -37,6 +37,12 @@ percentages. Different exercises are provided for this purpose and you
 can use the learning mode to practice with fractions. The program
 checks the user's input and gives feedback.
 
+%description -l pl.UTF-8
+KBruch to mały program do ćwiczenia obliczeń na ułamkach i procentach.
+W tym celu program podaje różne ćwiczenia, dzięki którym możesz
+trenować operacje na ułamkach w trybie nauki. KBruch sprawdza
+odpowiedzi użytkownika i podaje informacje zwrotne.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
