@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	22.04.1
+%define		kdeappsver	22.04.2
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		kbruch
 Summary:	Kbruch
 Name:		ka5-%{kaname}
-Version:	22.04.1
+Version:	22.04.2
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
-Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	dc7c675fcc2b84d8c5e558e64a7a8307
+Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
+# Source0-md5:	d3dc9a88c02e0c25361fe4a6b7896953
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
