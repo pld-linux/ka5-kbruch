@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	22.08.2
+%define		kdeappsver	22.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kbruch
 Summary:	Kbruch
 Name:		ka5-%{kaname}
-Version:	22.08.2
+Version:	22.08.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	dfa261486153c95f735102c68534f604
+# Source0-md5:	e9176e30b21d821a7a9be0dbd97c6e59
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -41,10 +41,10 @@ can use the learning mode to practice with fractions. The program
 checks the user's input and gives feedback.
 
 %description -l pl.UTF-8
-KBruch to mały program do ćwiczenia obliczeń na ułamkach i procentach.
-W tym celu program podaje różne ćwiczenia, dzięki którym możesz
-trenować operacje na ułamkach w trybie nauki. KBruch sprawdza
-odpowiedzi użytkownika i podaje informacje zwrotne.
+KBruch to mały program do ćwiczenia obliczeń na ułamkach i
+procentach. W tym celu program podaje różne ćwiczenia, dzięki
+którym możesz trenować operacje na ułamkach w trybie nauki. KBruch
+sprawdza odpowiedzi użytkownika i podaje informacje zwrotne.
 
 %prep
 %setup -q -n %{kaname}-%{version}
@@ -84,6 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/32x32/apps/kbruch.png
 %{_iconsdir}/hicolor/48x48/apps/kbruch.png
 %{_iconsdir}/hicolor/64x64/apps/kbruch.png
+%{_iconsdir}/hicolor/128x128/apps/kbruch.png
 %{_iconsdir}/hicolor/scalable/apps/kbruch.svgz
 %{_datadir}/kbruch
 %{_datadir}/kxmlgui5/kbruch
